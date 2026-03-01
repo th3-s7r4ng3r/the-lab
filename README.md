@@ -7,9 +7,6 @@ Building a self-hosted, self-managed, over-engineered infrastructure playground,
     ├── _docs/                          # Documentation for setup and management
     │   ├── basics/                     # Node setup, cluster bootstrapping, and maintenance guides
     │   ├── tasks/                      # Step-by-step guides for deploying specific tools and services
-    │   ├── 1. branching-strategy.md    # Git branching strategy
-    │   ├── 2. environment-infra-breakdown.md  # Environment and infrastructure overview
-    │   └── 3. module-breakdown.md      # Terraform module breakdown
     ├── ansible/                        # Ansible playbooks for k3s cluster lifecycle management
     │   ├── provision/                  # Playbooks for provisioning and bootstrapping k3s nodes
     │   ├── join-cloud-nodes/           # Playbooks for joining OCI/GCP instances as k3s worker nodes
