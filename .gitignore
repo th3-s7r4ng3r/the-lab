@@ -1,8 +1,7 @@
 # Ignore Kubernetes config files
-*/kube-config.yaml
-on-prem/cluster-state/terraform.tfstate
-cloud/cluster-state/terraform.tfstate
-*secrets.tf
+**/kube-config.yaml
+**/terraform.tfstate
+**secrets.tf
 
 # Terraform generated directories and files
 .terraform/
@@ -35,3 +34,5 @@ override.tf.json
 .DS_Store
 Thumbs.db
 
+# Local only files
+.local-files/

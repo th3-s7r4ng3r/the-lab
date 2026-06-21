@@ -1,4 +1,5 @@
 # the-lab
+
 Building a self-hosted, self-managed, over-engineered infrastructure playground, simply because I can
 
 ## Folder Structure
@@ -10,7 +11,7 @@ Building a self-hosted, self-managed, over-engineered infrastructure playground,
     ├── ansible/                        # Ansible playbooks for k3s cluster lifecycle management
     │   ├── provision/                  # Playbooks for provisioning and bootstrapping k3s nodes
     │   ├── join-cloud-nodes/           # Playbooks for joining OCI/GCP instances as k3s worker nodes
-    │   └── teardown/                   # Playbooks for draining and removing nodes from the cluster
+    │   └── cleanup/                    # Playbooks for draining and removing nodes from the cluster
     ├── cloud-infra/                    # Terraform code for provisioning cloud resources
     │   ├── oci/                        # OCI free tier resource provisioning (compute, networking, etc.)
     │   ├── gcp/                        # GCP free tier resource provisioning
@@ -32,7 +33,7 @@ Building a self-hosted, self-managed, over-engineered infrastructure playground,
 | Tool                  | Purpose                                                                 |
 | --------------------- | ----------------------------------------------------------------------- |
 | Jenkins               | CI/CD pipelines for automating infrastructure deployments               |
-| Harbor                | Self-hosted container image registry                                    |
+| Harbor                | Self-hosted & Proxy container image registry                            |
 | Traefik               | Ingress controller and reverse proxy for cluster traffic routing        |
 | CertManager           | Automated TLS certificate management (Let's Encrypt)                    |
 | ArgoCD                | GitOps-based continuous delivery for Kubernetes                         |
@@ -49,6 +50,7 @@ Building a self-hosted, self-managed, over-engineered infrastructure playground,
 | FluentBit                  | Lightweight log forwarding from nodes and pods to OpenSearch                  |
 | OpenSearch                 | Distributed log storage, search, and analytics engine                         |
 | OpenSearch Dashboard       | Web UI for visualizing and querying logs stored in OpenSearch                 |
+| Loki                       | Lightweight log aggregation and querying (plan for future)                    |
 | ntopng                     | Network traffic analysis and monitoring                                       |
 | OneUpTime / UptimeKuma     | Uptime monitoring, leveraging cloud-nodes for external reachability           |
 
@@ -71,6 +73,6 @@ Building a self-hosted, self-managed, over-engineered infrastructure playground,
 | --------------------- | --------------------------------------------------------------------------------------------------------- |
 | Various               | Sandbox environment for testing and experimenting with new homelab tools before adopting them in prod-lab |
 
-## Getting Started
+## Documentation
 
-To get started with the-lab repository, refer to the documentation in the `_docs` folder.
+To learn more about The Lab homelab project, refer to the documentation in the `_docs` folder.
